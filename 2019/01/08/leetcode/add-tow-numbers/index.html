@@ -96,27 +96,27 @@
 
 
 
-  <meta name="description" content="最近在看java.util.concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢我们先来看下以下代码12345678910111213141516171819202122private static boolean flag = true;public static void main(String[] args)  &amp;#123;    new">
-<meta name="keywords" content="java,并发">
+  <meta name="description" content="题目描述给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。 示例1:   输入: 123 输出: 321 示例2:   输入: -123 输出: -321 示例3:   输入: 120 输出: 21 注意:假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 $[−2^{31},  2^{31}-1]$。请根据这个假设，如果反转后整数溢出那么就返回 0。">
+<meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java并发包揭秘之volatile">
-<meta property="og:url" content="http://blog.tookbra.com/2017/07/11/java-volatile/index.html">
+<meta property="og:title" content="leetcode - 2、add tow numbers">
+<meta property="og:url" content="http://blog.tookbra.com/2019/01/08/leetcode/add-tow-numbers/index.html">
 <meta property="og:site_name" content="San&#39;s blog">
-<meta property="og:description" content="最近在看java.util.concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢我们先来看下以下代码12345678910111213141516171819202122private static boolean flag = true;public static void main(String[] args)  &amp;#123;    new">
+<meta property="og:description" content="题目描述给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。 示例1:   输入: 123 输出: 321 示例2:   输入: -123 输出: -321 示例3:   输入: 120 输出: 21 注意:假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 $[−2^{31},  2^{31}-1]$。请根据这个假设，如果反转后整数溢出那么就返回 0。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://o6puk5olb.bkt.clouddn.com/thread-jmm.png">
-<meta property="og:updated_time" content="2017-07-15T15:20:50.000Z">
+<meta property="og:image" content="http://blog.tookbra.com/images/leetcode/two-sum.png">
+<meta property="og:updated_time" content="2019-01-08T14:39:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java并发包揭秘之volatile">
-<meta name="twitter:description" content="最近在看java.util.concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢我们先来看下以下代码12345678910111213141516171819202122private static boolean flag = true;public static void main(String[] args)  &amp;#123;    new">
-<meta name="twitter:image" content="http://o6puk5olb.bkt.clouddn.com/thread-jmm.png">
+<meta name="twitter:title" content="leetcode - 2、add tow numbers">
+<meta name="twitter:description" content="题目描述给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。 示例1:   输入: 123 输出: 321 示例2:   输入: -123 输出: -321 示例3:   输入: 120 输出: 21 注意:假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 $[−2^{31},  2^{31}-1]$。请根据这个假设，如果反转后整数溢出那么就返回 0。">
+<meta name="twitter:image" content="http://blog.tookbra.com/images/leetcode/two-sum.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://blog.tookbra.com/2017/07/11/java-volatile/"/>
+  <link rel="canonical" href="http://blog.tookbra.com/2019/01/08/leetcode/add-tow-numbers/"/>
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>Java并发包揭秘之volatile | San's blog</title>
+  <title>leetcode - 2、add tow numbers | San's blog</title>
   
 
 
@@ -329,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/07/11/java-volatile/"/>
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2019/01/08/leetcode/add-tow-numbers/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="博主"/>
@@ -346,7 +346,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Java并发包揭秘之volatile
+          <h2 class="post-title" itemprop="name headline">leetcode - 2、add tow numbers
 
               
             
@@ -372,24 +372,12 @@
                 
               
 
-              <time title="创建于：2017-07-11 21:33:26" itemprop="dateCreated datePublished" datetime="2017-07-11T21:33:26+08:00">2017-07-11</time>
+              <time title="创建于：2019-01-08 17:46:33 / 更新于：22:39:47" itemprop="dateCreated datePublished" datetime="2019-01-08T17:46:33+08:00">2019-01-08</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Bearbeitet am</span>
-                
-                <time title="更新于：2017-07-15 23:20:50" itemprop="dateModified" datetime="2017-07-15T23:20:50+08:00">2017-07-15</time>
               
             
           </span>
@@ -406,7 +394,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a></span>
 
                 
                 
@@ -425,8 +413,8 @@
                 </span>
             
                 <span class="post-meta-item-text">Kommentare：</span>
-                <a href="/2017/07/11/java-volatile/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/07/11/java-volatile/" itemprop="commentCount"></span>
+                <a href="/2019/01/08/leetcode/add-tow-numbers/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/08/leetcode/add-tow-numbers/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -454,17 +442,26 @@
       
 
       
-        <h5 id="最近在看java-util-concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢"><a href="#最近在看java-util-concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢" class="headerlink" title="最近在看java.util.concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢"></a>最近在看java.util.concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢</h5><p>我们先来看下以下代码<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span>  </span>&#123;</span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (flag) &#123;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(Thread.currentThread().getName() + <span class="string">":线程结束"</span>);</span><br><span class="line">    &#125;).start();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        TimeUnit.SECONDS.sleep(<span class="number">1</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        flag = <span class="keyword">false</span>;</span><br><span class="line">        System.out.println(Thread.currentThread().getName() + <span class="string">":退出循环"</span>);</span><br><span class="line">    &#125;).start();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输出结果：Thread-1:退出循环</span><br></pre></td></tr></table></figure>
-<p><strong>为什么这里我修改了flag的值为false，但线程中还没跳出while循环呢?</strong></p>
-<p>在<a href="http://tutorials.jenkov.com/java-concurrency/java-memory-model.html" target="_blank" rel="noopener">Java内存模型</a>中我们可以看到，在多线程的情况下，每个线程在jvm中都有自己的线程栈，当线程创建时，它会将主内存所有可访问变量的值复制到自己的工作内存中，线程结束后会将变量从工作内存同步回主内存中<br><img src="http://o6puk5olb.bkt.clouddn.com/thread-jmm.png" alt="线程内存模型"></p>
-<p>在上面的代码中定义了2个线程，在第一个线程中对flag变量进行判断，如为true则一直循环，反之结束循环，在第二个线程中修改了共享变量flag的值，因为每个线程中都是共享变量flag的拷贝，第二个线程中对flag值进行修改，第一个线程是感知不到的</p>
-<p><strong>那如何让线程之间共享变量的修改在每个线程中都可以看见？</strong><br>噔噔噔～～～ volatile出现了</p>
-<p>我们对上面的代码稍微修改下，对共享变量flag加上volatile关键字，再来看看运行结果<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> <span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span>  </span>&#123;</span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (flag) &#123;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(Thread.currentThread().getName() + <span class="string">":线程结束"</span>);</span><br><span class="line">    &#125;).start();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        TimeUnit.SECONDS.sleep(<span class="number">1</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        flag = <span class="keyword">false</span>;</span><br><span class="line">        System.out.println(Thread.currentThread().getName() + <span class="string">":退出循环"</span>);</span><br><span class="line">    &#125;).start();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输出结果：</span><br><span class="line">Thread-1:退出循环</span><br><span class="line">Thread-0:线程结束</span><br></pre></td></tr></table></figure>
-<p>从上面列子中我们可以看到volatile修饰的变量在线程中是相互可见的。</p>
-<p><strong>参考</strong><br><a href="http://tutorials.jenkov.com/java-concurrency/volatile.html" target="_blank" rel="noopener">http://tutorials.jenkov.com/java-concurrency/volatile.html</a><br><a href="https://en.wikipedia.org/w/index.php?title=Volatile_(computer_programming)&amp;cm_mc_uid=14053210175014961926835&amp;cm_mc_sid_50200000=1499876133" target="_blank" rel="noopener">https://en.wikipedia.org/w/index.php?title=Volatile_(computer_programming)&amp;cm_mc_uid=14053210175014961926835&amp;cm_mc_sid_50200000=1499876133</a><br><a href="https://www.ibm.com/developerworks/cn/java/j-jtp06197.html" target="_blank" rel="noopener">https://www.ibm.com/developerworks/cn/java/j-jtp06197.html</a></p>
-
+        <p><img src="/images/leetcode/two-sum.png" alt="two-sum"></p>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。</p>
+<p>示例1:</p>
+<blockquote>
+</blockquote>
+<pre><code>输入: 123
+输出: 321
+</code></pre><p>示例2:</p>
+<blockquote>
+</blockquote>
+<pre><code>输入: -123
+输出: -321
+</code></pre><p>示例3:</p>
+<blockquote>
+</blockquote>
+<pre><code>输入: 120
+输出: 21
+</code></pre><p>注意:<br>假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 $[−2^{31},  2^{31}-1]$。请根据这个假设，如果反转后整数溢出那么就返回 0。<br><a id="more"></a></p>
+<h3 id="解"><a href="#解" class="headerlink" title="解"></a>解</h3><h4 id="Round-1"><a href="#Round-1" class="headerlink" title="Round 1"></a>Round 1</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> x;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">boolean</span> flag = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">long</span> temp = x;</span><br><span class="line">        <span class="keyword">if</span>(temp &lt; <span class="number">0</span>) &#123;</span><br><span class="line">            flag = <span class="keyword">true</span>;</span><br><span class="line">            temp = -temp;</span><br><span class="line">        &#125;</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer(String.valueOf(temp));</span><br><span class="line">        sb.reverse();</span><br><span class="line">        Long result = Long.valueOf(sb.toString());</span><br><span class="line">        <span class="keyword">if</span>(result &gt; Integer.MAX_VALUE) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(result &lt; Integer.MIN_VALUE) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> flag ? -(result.intValue()) : result.intValue();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Round-2"><a href="#Round-2" class="headerlink" title="Round 2"></a>Round 2</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (x != <span class="number">0</span>) &#123;</span><br><span class="line">            result = result * <span class="number">10</span> + (x % <span class="number">10</span>);</span><br><span class="line">            x /= <span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(result &lt; Integer.MIN_VALUE || result &gt; Integer.MAX_VALUE) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">int</span>) result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -516,9 +513,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"># java</a>
-          
-            <a href="/tags/并发/" rel="tag"># 并发</a>
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
           
         </div>
       
@@ -531,8 +526,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/11/java-Unsafe/" rel="next" title="Java并发包揭秘之Unsafe">
-                <i class="fa fa-chevron-left"></i> Java并发包揭秘之Unsafe
+              <a href="/2019/01/07/leetcode/two-sum/" rel="next" title="leetcode - 1、two sum">
+                <i class="fa fa-chevron-left"></i> leetcode - 1、two sum
               </a>
             
           </div>
@@ -540,10 +535,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/14/java-concurrent-AtomicBoolean/" rel="prev" title="Java并发包揭秘之AtomicBoolean">
-                Java并发包揭秘之AtomicBoolean <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -760,7 +751,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#最近在看java-util-concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢"><span class="nav-number">1.</span> <span class="nav-text">最近在看java.util.concurrent并发包的时候经常看到有volatile关键字来修饰的变量，那么这个关键字有什么作用呢</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解"><span class="nav-number">2.</span> <span class="nav-text">解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Round-1"><span class="nav-number">2.1.</span> <span class="nav-text">Round 1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Round-2"><span class="nav-number">2.2.</span> <span class="nav-text">Round 2</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -915,9 +906,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://blog.tookbra.com/2017/07/11/java-volatile/";
-    this.page.identifier = "2017/07/11/java-volatile/";
-    this.page.title = 'Java并发包揭秘之volatile';
+    this.page.url = "http://blog.tookbra.com/2019/01/08/leetcode/add-tow-numbers/";
+    this.page.identifier = "2019/01/08/leetcode/add-tow-numbers/";
+    this.page.title = 'leetcode - 2、add tow numbers';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -970,6 +961,53 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style>
+
+    
   
 
 
