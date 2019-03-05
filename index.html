@@ -2,26 +2,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
 <html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -36,50 +34,69 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
 
   
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="tookbra.com, java, nodejs, spring cloud, dubbo" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="tookbra&apos;s blog, the one like liao mei">
+  <meta name="description" content="tookbra&apos;s blog, the one like liao mei">
 <meta property="og:type" content="website">
 <meta property="og:title" content="San&#39;s blog">
 <meta property="og:url" content="http://blog.tookbra.com/index.html">
@@ -92,29 +109,6 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
 
 
 
@@ -122,7 +116,11 @@
 
 
 
-
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>San's blog</title>
   
@@ -131,18 +129,37 @@
 
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?75f432d676690fbf40aab6fcb7c4630c";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
@@ -159,23 +176,26 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">San's blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <h1 class="site-subtitle" itemprop="description">java, spring cloud, 微服务</h1>
       
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -183,55 +203,86 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-首页">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-标签">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-归档">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
+          
+          <li class="menu-item menu-item-首页 menu-item-active">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>首页</a>
+
+  </li>
         
-        <li class="menu-item menu-item-关于">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
+        
+        
+          
+          <li class="menu-item menu-item-标签">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br/>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-归档">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-关于">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br/>关于</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
   
 
   
@@ -239,12 +290,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -257,21 +319,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/12/01/spring-schema-extends2/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2019/01/07/leetcode/two-sum/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -281,11 +345,20 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/01/spring-schema-extends2/" itemprop="url">spring schema extends2(二)</a></h2>
+                
+                <a href="/2019/01/07/leetcode/two-sum/" class="post-title-link" itemprop="url">two sum</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -293,13 +366,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-01T14:28:11+08:00">
-                2017-12-01
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2019-01-07 22:28:23" itemprop="dateCreated datePublished" datetime="2019-01-07T22:28:23+08:00">2019-01-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2019-01-08 01:58:38" itemprop="dateModified" datetime="2019-01-08T01:58:38+08:00">2019-01-08</time>
+              
             
           </span>
 
@@ -315,11 +405,393 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/spring/" itemprop="url" rel="index">
-                    <span itemprop="name">spring</span>
-                  </a>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
                 </span>
+                <a href="/2019/01/07/leetcode/two-sum/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/01/07/leetcode/two-sum/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>
+              
+###题目描述给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
+你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
+示例:
+
+
+给定 nums = [2, 7, 11, 15], target 
+              ...
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/07/leetcode/two-sum/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2018/12/24/dubbo/dubbo系列-前序/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="San's blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/24/dubbo/dubbo系列-前序/" class="post-title-link" itemprop="url">dubbo系列-前序</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建于：2018-12-24 16:35:30 / 更新于：16:59:44" itemprop="dateCreated datePublished" datetime="2018-12-24T16:35:30+08:00">2018-12-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/dubbo/" itemprop="url" rel="index"><span itemprop="name">dubbo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/24/dubbo/dubbo系列-前序/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/12/24/dubbo/dubbo系列-前序/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>
+              
+github
+dubbo
+
+
+              
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/12/24/dubbo/dubbo系列-前序/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/12/01/spring-schema-extends2/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="San's blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/12/01/spring-schema-extends2/" class="post-title-link" itemprop="url">spring schema extends2(二)</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建于：2017-12-01 14:28:11" itemprop="dateCreated datePublished" datetime="2017-12-01T14:28:11+08:00">2017-12-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/spring/" itemprop="url" rel="index"><span itemprop="name">spring</span></a></span>
 
                 
                 
@@ -335,6 +807,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/12/01/spring-schema-extends2/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
                         data-disqus-identifier="2017/12/01/spring-schema-extends2/" itemprop="commentCount"></span>
                 </a>
@@ -366,27 +839,37 @@
       
         
           
-          概述接上文 我们描述了怎么去实现spring schema扩展，本文我们来介绍通过另外一种方式也来实现上文中实现的功能。
+            <p>
+              概述接上文 我们描述了怎么去实现spring schema扩展，本文我们来介绍通过另外一种方式也来实现上文中实现的功能。
 在以前开发的时候我们通常通过配置xml来告诉spring容器在应用程序中如何去实例化，配置和组装应用程序中的对象，但是xml配置不是唯一配置元数据的方式。
 
 基于注释的配置 从S
-          ...
+              ...
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/01/spring-schema-extends2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/01/spring-schema-extends2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -419,21 +902,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/11/30/spring-schema-extends1/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/11/30/spring-schema-extends1/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -443,11 +928,20 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/30/spring-schema-extends1/" itemprop="url">spring schema extends(一)</a></h2>
+                
+                <a href="/2017/11/30/spring-schema-extends1/" class="post-title-link" itemprop="url">spring schema extends(一)</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -455,13 +949,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-30T14:32:28+08:00">
-                2017-11-30
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2017-11-30 14:32:28" itemprop="dateCreated datePublished" datetime="2017-11-30T14:32:28+08:00">2017-11-30</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2019-01-07 22:02:16" itemprop="dateModified" datetime="2019-01-07T22:02:16+08:00">2019-01-07</time>
+              
             
           </span>
 
@@ -477,11 +988,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/spring/" itemprop="url" rel="index">
-                    <span itemprop="name">spring</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/spring/" itemprop="url" rel="index"><span itemprop="name">spring</span></a></span>
 
                 
                 
@@ -497,6 +1004,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/30/spring-schema-extends1/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
                         data-disqus-identifier="2017/11/30/spring-schema-extends1/" itemprop="commentCount"></span>
                 </a>
@@ -527,26 +1035,41 @@
 
       
         
-          
-          概述从spring 2.0以后，spring提供了schema扩展，当spring的xml配置满足不了我们的时候，我们可以使用spring schema expand来自定义xml解析器
-像我们熟知的spring-context,spring-bean,spring-tx,dubbo等框架都使用了s
-          ...
+          <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>从spring 2.0以后，spring提供了schema扩展，当spring的xml配置满足不了我们的时候，我们可以使用spring schema expand来自定义xml解析器</p>
+<p>像我们熟知的spring-context,spring-bean,spring-tx,dubbo等框架都使用了spring schema expand</p>
+<p>我们通过以下步骤来创建一个spring schema expand</p>
+<ul>
+<li>创建xml描述</li>
+<li>编写xsd文件，描述自定义对象</li>
+<li>实现自定义NamespaceHandlerSupport</li>
+<li>实现自定义BeanDefinitionParser</li>
+<li>注册解析器到spring容器中</li>
+<li>验证结果</li>
+</ul>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/30/spring-schema-extends1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/11/30/spring-schema-extends1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -579,21 +1102,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/09/06/Spring-Cloud-Config-Server-Source/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/09/06/spring-cloud/config/Spring-Cloud-Config-Server-Source/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -603,11 +1128,20 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/06/Spring-Cloud-Config-Server-Source/" itemprop="url">Spring Cloud Config Server 解析</a></h2>
+                
+                <a href="/2017/09/06/spring-cloud/config/Spring-Cloud-Config-Server-Source/" class="post-title-link" itemprop="url">Spring Cloud Config Server 解析</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -615,13 +1149,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T11:29:04+08:00">
-                2017-09-06
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2017-09-06 11:29:04" itemprop="dateCreated datePublished" datetime="2017-09-06T11:29:04+08:00">2017-09-06</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+              
             
           </span>
 
@@ -634,9 +1185,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/09/06/Spring-Cloud-Config-Server-Source/#comments" itemprop="discussionUrl">
+                <a href="/2017/09/06/spring-cloud/config/Spring-Cloud-Config-Server-Source/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/06/Spring-Cloud-Config-Server-Source/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/09/06/spring-cloud/config/Spring-Cloud-Config-Server-Source/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -666,25 +1218,35 @@
       
         
           
-          概述在常规单体项目开发中，我们会有很多配置，比如本地开发环境配置、测试环境配置、生产环境配置、开关配置等通常我们都会放在resource文件夹下，在编译打包期间，把对应的profile打包进去。
+            <p>
+              概述在常规单体项目开发中，我们会有很多配置，比如本地开发环境配置、测试环境配置、生产环境配置、开关配置等通常我们都会放在resource文件夹下，在编译打包期间，把对应的profile打包进去。
 在微服务环境下场景下，由于服务的拆分会衍生出N个服务，这样每个服务都需要去写配置文件，这样一来需要管理的
-          ...
+              ...
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/06/Spring-Cloud-Config-Server-Source/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/09/06/spring-cloud/config/Spring-Cloud-Config-Server-Source/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -717,21 +1279,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/09/05/Spring-Cloud-Config-Server/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/09/05/spring-cloud/config/Spring-Cloud-Config-Server/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -741,11 +1305,20 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/05/Spring-Cloud-Config-Server/" itemprop="url">Spring Cloud 统一配置</a></h2>
+                
+                <a href="/2017/09/05/spring-cloud/config/Spring-Cloud-Config-Server/" class="post-title-link" itemprop="url">Spring Cloud 统一配置</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -753,13 +1326,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-05T21:40:23+08:00">
-                2017-09-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2017-09-05 21:40:23" itemprop="dateCreated datePublished" datetime="2017-09-05T21:40:23+08:00">2017-09-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2017-09-06 11:27:42" itemprop="dateModified" datetime="2017-09-06T11:27:42+08:00">2017-09-06</time>
+              
             
           </span>
 
@@ -772,9 +1362,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/09/05/Spring-Cloud-Config-Server/#comments" itemprop="discussionUrl">
+                <a href="/2017/09/05/spring-cloud/config/Spring-Cloud-Config-Server/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/05/Spring-Cloud-Config-Server/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/09/05/spring-cloud/config/Spring-Cloud-Config-Server/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -804,26 +1395,36 @@
       
         
           
-          概述Spring Cloud Config是一个为分布式系统提供统一配置支持的项目。在Spring Cloud Config还未出来前，我们可以用zookeeper来做统一配置管理中心
+            <p>
+              概述Spring Cloud Config是一个为分布式系统提供统一配置支持的项目。在Spring Cloud Config还未出来前，我们可以用zookeeper来做统一配置管理中心
 Spring Cloud Config Server怎么创建一个配置中心呢？
-目录结构12345678910111
-          ...
+目录结构.├── config-se
+              ...
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/05/Spring-Cloud-Config-Server/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/09/05/spring-cloud/config/Spring-Cloud-Config-Server/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -856,21 +1457,23 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/31/Spring-Boot-Admin-Notify/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/31/Spring-Boot-Admin-Notify/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -880,11 +1483,20 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/31/Spring-Boot-Admin-Notify/" itemprop="url">Spring Boot Admin Notify</a></h2>
+                
+                <a href="/2017/08/31/Spring-Boot-Admin-Notify/" class="post-title-link" itemprop="url">Spring Boot Admin Notify</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -892,13 +1504,30 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-31T23:09:52+08:00">
-                2017-08-31
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2017-08-31 23:09:52" itemprop="dateCreated datePublished" datetime="2017-08-31T23:09:52+08:00">2017-08-31</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2017-11-29 15:53:28" itemprop="dateModified" datetime="2017-11-29T15:53:28+08:00">2017-11-29</time>
+              
             
           </span>
 
@@ -912,6 +1541,7 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/08/31/Spring-Boot-Admin-Notify/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
                         data-disqus-identifier="2017/08/31/Spring-Boot-Admin-Notify/" itemprop="commentCount"></span>
                 </a>
@@ -943,24 +1573,34 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
       
         
           
-          
-          
+            <p>
+              
+              
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/31/Spring-Boot-Admin-Notify/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/08/31/Spring-Boot-Admin-Notify/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -993,21 +1633,23 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -1017,11 +1659,20 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/" itemprop="url">Spring Cloud Eureka (八) 服务下线</a></h2>
+                
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/" class="post-title-link" itemprop="url">Spring Cloud Eureka (八) 服务下线</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1029,13 +1680,30 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-30T16:33:53+08:00">
-                2017-08-30
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2017-08-30 16:33:53" itemprop="dateCreated datePublished" datetime="2017-08-30T16:33:53+08:00">2017-08-30</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+              
             
           </span>
 
@@ -1051,11 +1719,7 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/eureka/" itemprop="url" rel="index">
-                    <span itemprop="name">eureka</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/eureka/" itemprop="url" rel="index"><span itemprop="name">eureka</span></a></span>
 
                 
                 
@@ -1070,9 +1734,10 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/#comments" itemprop="discussionUrl">
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/30/Spring-Cloud-Eureka-Client-Cancel/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1102,30 +1767,40 @@ Spring Cloud Config Server怎么创建一个配置中心呢？
       
         
           
-          
+            <p>
+              
 Spring Cloud Eureka(一) 前身今世
 Spring Cloud Eureka(二) 配置文件
 Spring Cloud Eureka(三) 注册中心
 Spring Cloud Eureka(四) 注册中心源码
 Spring Cloud Eureka(五) 客户端源码
 Spring
-          ...
+              ...
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1158,21 +1833,23 @@ Spring
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -1182,11 +1859,20 @@ Spring
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/" itemprop="url">Spring Cloud Eureka (七) 服务续约</a></h2>
+                
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/" class="post-title-link" itemprop="url">Spring Cloud Eureka (七) 服务续约</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1194,13 +1880,30 @@ Spring
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-30T14:30:47+08:00">
-                2017-08-30
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2017-08-30 14:30:47" itemprop="dateCreated datePublished" datetime="2017-08-30T14:30:47+08:00">2017-08-30</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+              
             
           </span>
 
@@ -1216,11 +1919,7 @@ Spring
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/eureka/" itemprop="url" rel="index">
-                    <span itemprop="name">eureka</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/eureka/" itemprop="url" rel="index"><span itemprop="name">eureka</span></a></span>
 
                 
                 
@@ -1235,9 +1934,10 @@ Spring
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/#comments" itemprop="discussionUrl">
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1267,30 +1967,40 @@ Spring
       
         
           
-          
+            <p>
+              
 Spring Cloud Eureka(一) 前身今世
 Spring Cloud Eureka(二) 配置文件
 Spring Cloud Eureka(三) 注册中心
 Spring Cloud Eureka(四) 注册中心源码
 Spring Cloud Eureka(五) 客户端源码
 Spring
-          ...
+              ...
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1323,21 +2033,23 @@ Spring
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/29/Spring-Cloud-Eureka-Client-Register/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
+      <meta itemprop="name" content="San's blog"/>
     </span>
 
     
@@ -1347,11 +2059,20 @@ Spring
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/" itemprop="url">Spring Cloud Eureka (六) 服务注册</a></h2>
+                
+                <a href="/2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/" class="post-title-link" itemprop="url">Spring Cloud Eureka (六) 服务注册</a>
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1359,13 +2080,30 @@ Spring
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-29T18:26:14+08:00">
-                2017-08-29
-              </time>
+
+              
+                
+              
+
+              <time title="创建于：2017-08-29 18:26:14" itemprop="dateCreated datePublished" datetime="2017-08-29T18:26:14+08:00">2017-08-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+              
             
           </span>
 
@@ -1381,11 +2119,7 @@ Spring
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/eureka/" itemprop="url" rel="index">
-                    <span itemprop="name">eureka</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/eureka/" itemprop="url" rel="index"><span itemprop="name">eureka</span></a></span>
 
                 
                 
@@ -1400,9 +2134,10 @@ Spring
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/#comments" itemprop="discussionUrl">
+                <a href="/2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/#comments" itemprop="discussionUrl">
+                
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/29/Spring-Cloud-Eureka-Client-Register/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1432,360 +2167,40 @@ Spring
       
         
           
-          
+            <p>
+              
 Spring Cloud Eureka(一) 前身今世
 Spring Cloud Eureka(二) 配置文件
 Spring Cloud Eureka(三) 注册中心
 Spring Cloud Eureka(四) 注册中心源码
 Spring Cloud Eureka(五) 客户端源码
 Spring
-          ...
+              ...
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
     
 
     
-
+    
     
 
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
+    
 
     
       
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/25/Spring-Cloud-Eureka-Client-Source/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
-    </span>
-
     
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/" itemprop="url">Spring Cloud Eureka(五) 客户端源码</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T14:44:58+08:00">
-                2017-08-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/eureka/" itemprop="url" rel="index">
-                    <span itemprop="name">eureka</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/25/Spring-Cloud-Eureka-Client-Source/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud Eureka(五) 客户端源码
-Spring
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/25/Spring-Cloud-Eureka-Server-Source/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="呆呆">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/" itemprop="url">Spring Cloud Eureka(四) 注册中心源码</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T11:26:13+08:00">
-                2017-08-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/eureka/" itemprop="url" rel="index">
-                    <span itemprop="name">eureka</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/25/Spring-Cloud-Eureka-Server-Source/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          [Spring Cloud Eureka]
-
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
     
 
     
@@ -1814,15 +2229,12 @@ Spring Cloud
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -1845,93 +2257,122 @@ Spring Cloud
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
                 src="/images/logo.png"
-                alt="呆呆" />
+                alt="博主"/>
             
-              <p class="site-author-name" itemprop="name">呆呆</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-author-name" itemprop="name">博主</p>
+              <p class="site-description motion-element" itemprop="description">tookbra's blog, the one like liao mei</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives">
-              
-                  <span class="site-state-item-count">30</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">分类</span>
-                
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">11</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
-            
-
-          </nav>
-
           
-
-          
-            <div class="links-of-author motion-element">
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
                 
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/tookbra" target="_blank" title="GitHub">
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
                       
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:tookbra@gmail.com" target="_blank" title="E-Mail">
+                    
                       
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
                 
-            </div>
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
           
 
           
           
 
           
+            
           
-
           
 
         </div>
-      </section>
+      </div>
 
       
 
-      
-        <div class="back-to-top">
-          <i class="fa fa-arrow-up"></i>
-          
-        </div>
       
 
     </div>
@@ -1944,17 +2385,19 @@ Spring Cloud
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">2016-2018</span>
+  <span class="author" itemprop="copyrightHolder">2016-2019</span>
+
+  
 
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.7.1</div>
 
 
 
@@ -1962,12 +2405,13 @@ Spring Cloud
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
 
 
 
 
         
+
 
 
 
@@ -1980,20 +2424,22 @@ Spring Cloud
     </footer>
 
     
-
-    
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
       </div>
     
 
+    
+
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -2007,7 +2453,6 @@ Spring Cloud
 
 
 
-  
 
 
 
@@ -2020,43 +2465,27 @@ Spring Cloud
 
 
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+
+
+
+
 
   
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script src="/js/src/utils.js?v=6.7.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script src="/js/src/motion.js?v=6.7.0"></script>
 
 
 
@@ -2064,9 +2493,10 @@ Spring Cloud
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script src="/js/src/affix.js?v=6.7.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
 
 
 
@@ -2075,84 +2505,98 @@ Spring Cloud
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
 
 
 
   
 
 
+
+
   
 
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
     
-      <script id="dsq-count-scr" src="https://tookbra.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
-
-  
-  
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
-
-  <script>
-    
-    
-      flOptions = {};
       
-          flOptions.iconStyle = "box";
+        
       
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
     
-  </script>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow: auto hidden;
+}
+</style>
+
+    
+  
+
 
   
 
@@ -2161,6 +2605,43 @@ Spring Cloud
   
 
   
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+
 
 </body>
 </html>
