@@ -96,20 +96,18 @@
 
 
 
-  <meta name="description" content="概念spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法 约定 在META-INF/services/目录中创建以Service接口路径命名的文本文件, 文件中包含实现接口实现类的路径，多个实现类以换行符分割 使用ServiceLoader.load 动态加载Service接口的实现类 如SP">
+  <meta name="description" content="概念spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法 约定 在META-INF/services/目录中创建以Service接口路径命名的文本文件, 文件中包含实现接口实现类的路径，多个实现类以换行符分割 使用ServiceLoader.load 动态加载Service接口的实现类 如SPI">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java spi">
 <meta property="og:url" content="http://blog.tookbra.com/2019/03/12/dubbo/java-spi/index.html">
 <meta property="og:site_name" content="San&#39;s blog">
-<meta property="og:description" content="概念spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法 约定 在META-INF/services/目录中创建以Service接口路径命名的文本文件, 文件中包含实现接口实现类的路径，多个实现类以换行符分割 使用ServiceLoader.load 动态加载Service接口的实现类 如SP">
+<meta property="og:description" content="概念spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法 约定 在META-INF/services/目录中创建以Service接口路径命名的文本文件, 文件中包含实现接口实现类的路径，多个实现类以换行符分割 使用ServiceLoader.load 动态加载Service接口的实现类 如SPI">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://blog.tookbra.com/images/leetcode/two-sum.png">
-<meta property="og:updated_time" content="2019-03-14T08:49:21.725Z">
+<meta property="og:updated_time" content="2019-03-25T05:43:33.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java spi">
-<meta name="twitter:description" content="概念spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法 约定 在META-INF/services/目录中创建以Service接口路径命名的文本文件, 文件中包含实现接口实现类的路径，多个实现类以换行符分割 使用ServiceLoader.load 动态加载Service接口的实现类 如SP">
-<meta name="twitter:image" content="http://blog.tookbra.com/images/leetcode/two-sum.png">
+<meta name="twitter:description" content="概念spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法 约定 在META-INF/services/目录中创建以Service接口路径命名的文本文件, 文件中包含实现接口实现类的路径，多个实现类以换行符分割 使用ServiceLoader.load 动态加载Service接口的实现类 如SPI">
 
 
 
@@ -389,7 +387,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2019-03-14 16:49:21" itemprop="dateModified" datetime="2019-03-14T16:49:21+08:00">2019-03-14</time>
+                <time title="更新于：2019-03-25 13:43:33" itemprop="dateModified" datetime="2019-03-25T13:43:33+08:00">2019-03-25</time>
               
             
           </span>
@@ -454,8 +452,7 @@
       
 
       
-        <p><img src="/images/leetcode/two-sum.png" alt="two-sum"></p>
-<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法</p>
+        <h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>spi 全称（Service Provider Interface)，是JDK内置的一种服务发现机制, 不同的厂商可以通过扩展的形式来动态替换需要实现的方法</p>
 <h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><ul>
 <li>在META-INF/services/目录中创建以Service接口路径命名的文本文件, 文件中包含实现接口实现类的路径，多个实现类以换行符分割</li>
 <li>使用ServiceLoader.load 动态加载Service接口的实现类</li>
