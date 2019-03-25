@@ -96,18 +96,20 @@
 
 
 
-  <meta name="description" content="[Spring Cloud Eureka]  Spring Cloud Eureka(一) 前身今世 Spring Cloud Eureka(二) 配置文件 Spring Cloud Eureka(三) 注册中心 Spring Cloud Eureka(四) 注册中心源码 Spring Cloud Eureka(五) 客户端源码 Spring Cloud Eureka(六) 服务注册 Spring">
+  <meta name="description" content="[Spring Cloud Eureka]  Spring Cloud Eureka(一) 前身今世 Spring Cloud Eureka(二) 配置文件 Spring Cloud Eureka(三) 注册中心 Spring Cloud Eureka(四) 注册中心源码 Spring Cloud Eureka(五) 客户端源码 Spring Cloud Eureka(六) 服务注册 Sprin">
 <meta name="keywords" content="eureka">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring Cloud Eureka(一) 前身今世">
 <meta property="og:url" content="http://blog.tookbra.com/2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-一/index.html">
 <meta property="og:site_name" content="San&#39;s blog">
-<meta property="og:description" content="[Spring Cloud Eureka]  Spring Cloud Eureka(一) 前身今世 Spring Cloud Eureka(二) 配置文件 Spring Cloud Eureka(三) 注册中心 Spring Cloud Eureka(四) 注册中心源码 Spring Cloud Eureka(五) 客户端源码 Spring Cloud Eureka(六) 服务注册 Spring">
+<meta property="og:description" content="[Spring Cloud Eureka]  Spring Cloud Eureka(一) 前身今世 Spring Cloud Eureka(二) 配置文件 Spring Cloud Eureka(三) 注册中心 Spring Cloud Eureka(四) 注册中心源码 Spring Cloud Eureka(五) 客户端源码 Spring Cloud Eureka(六) 服务注册 Sprin">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-03T09:16:35.000Z">
+<meta property="og:image" content="http://blog.tookbra.com/images/spring-cloud/2017-08-25-eureka-logo-2627.png">
+<meta property="og:updated_time" content="2019-03-21T09:25:56.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Cloud Eureka(一) 前身今世">
-<meta name="twitter:description" content="[Spring Cloud Eureka]  Spring Cloud Eureka(一) 前身今世 Spring Cloud Eureka(二) 配置文件 Spring Cloud Eureka(三) 注册中心 Spring Cloud Eureka(四) 注册中心源码 Spring Cloud Eureka(五) 客户端源码 Spring Cloud Eureka(六) 服务注册 Spring">
+<meta name="twitter:description" content="[Spring Cloud Eureka]  Spring Cloud Eureka(一) 前身今世 Spring Cloud Eureka(二) 配置文件 Spring Cloud Eureka(三) 注册中心 Spring Cloud Eureka(四) 注册中心源码 Spring Cloud Eureka(五) 客户端源码 Spring Cloud Eureka(六) 服务注册 Sprin">
+<meta name="twitter:image" content="http://blog.tookbra.com/images/spring-cloud/2017-08-25-eureka-logo-2627.png">
 
 
 
@@ -196,7 +198,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -385,9 +387,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+                <time title="更新于：2019-03-21 17:25:56" itemprop="dateModified" datetime="2019-03-21T17:25:56+08:00">2019-03-21</time>
               
             
           </span>
@@ -422,7 +424,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-一/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-一/" itemprop="commentCount"></span>
                 </a>
@@ -452,7 +454,8 @@
       
 
       
-        <p>[Spring Cloud Eureka]</p>
+        <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<p>[Spring Cloud Eureka]</p>
 <ul>
 <li>Spring Cloud Eureka(一) 前身今世</li>
 <li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
@@ -467,6 +470,7 @@
 <p>Eureka(尢里卡)是Netflix公司开源的基于REST（Representational State Transfer）的服务<br>主要用于AWS云中，用于定位服务，以实现中间层服务器的负载平衡和故障转移。我们称这个服务，尤里卡服务器。<br>尤里卡还提供了一个基于Java的客户端组件Eureka Client，它与服务的交互更容易。<br>客户端还具有内置负载平衡器，可进行基本的循环负载平衡。<br>在Netflix，一个更复杂的负载均衡器将Eureka包装，以提供基于诸如流量，资源使用，错误条件等多个因素的加权负载平衡，以提供卓越的弹性。</p>
 </blockquote>
 <p>Spring Cloud把Netflix公司开源的Eureka整合到了Spring Cloud Netflix项目中，抽象出接口，方便使用。</p>
+<a id="more"></a>
 <h2 id="Eureka相对于zookeeper做为注册中心优势在哪"><a href="#Eureka相对于zookeeper做为注册中心优势在哪" class="headerlink" title="Eureka相对于zookeeper做为注册中心优势在哪"></a>Eureka相对于zookeeper做为注册中心优势在哪</h2><p>在这分(C)布(A)式(P)理论横行的年代里，我们都知道一个分布式系统不可能同时满足C(一致性)、A(可用性)和P(分区容错性)。<br>由于分区容错性在是分布式系统中必须要保证的，所以我们要么保证一致性，要么保证分区容错性。</p>
 <p><strong>zookeeper做为注册中心:</strong></p>
 <blockquote>
@@ -553,7 +557,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/23/elasticsearch-install/" rel="next" title="elasticsearch安装">
+              <a href="/2017/08/23/storage/elasticsearch-install/" rel="next" title="elasticsearch安装">
                 <i class="fa fa-chevron-left"></i> elasticsearch安装
               </a>
             
@@ -645,7 +649,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -713,9 +717,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

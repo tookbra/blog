@@ -104,10 +104,12 @@
 <meta property="og:site_name" content="San&#39;s blog">
 <meta property="og:description" content="前景新服务器，新气象，拿到服务器后对系统自带的openssl升级">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-07T14:03:50.000Z">
+<meta property="og:image" content="http://blog.tookbra.com/images/linux/openssl.png">
+<meta property="og:updated_time" content="2019-03-21T08:39:52.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="openssl upgrade">
 <meta name="twitter:description" content="前景新服务器，新气象，拿到服务器后对系统自带的openssl升级">
+<meta name="twitter:image" content="http://blog.tookbra.com/images/linux/openssl.png">
 
 
 
@@ -196,7 +198,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -385,9 +387,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2019-01-07 22:03:50" itemprop="dateModified" datetime="2019-01-07T22:03:50+08:00">2019-01-07</time>
+                <time title="更新于：2019-03-21 16:39:52" itemprop="dateModified" datetime="2019-03-21T16:39:52+08:00">2019-03-21</time>
               
             
           </span>
@@ -422,7 +424,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/03/01/linux/openssl-upgrade/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/01/linux/openssl-upgrade/" itemprop="commentCount"></span>
                 </a>
@@ -452,7 +454,8 @@
       
 
       
-        <h2 id="前景"><a href="#前景" class="headerlink" title="前景"></a>前景</h2><p>新服务器，新气象，拿到服务器后对系统自带的openssl升级<br><a id="more"></a></p>
+        <p><img src="/images/linux/openssl.png" alt="openssl"></p>
+<h2 id="前景"><a href="#前景" class="headerlink" title="前景"></a>前景</h2><p>新服务器，新气象，拿到服务器后对系统自带的openssl升级<br><a id="more"></a></p>
 <h2 id="升级openssl"><a href="#升级openssl" class="headerlink" title="升级openssl"></a>升级openssl</h2><p>备份系统自带openssl文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv /usr/bin/openssl /usr/bin/openssl.bak</span><br></pre></td></tr></table></figure></p>
 <p>安装相关依赖<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install zlib-devel</span><br></pre></td></tr></table></figure></p>
 <p>下载openssl文件，检测运行环境编译并安装<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.openssl.org/source/openssl-1.1.0e.tar.gz</span><br><span class="line">tar xvf openssl-1.1.0e.tar.gz &amp;&amp; cd openssl-1.1.0e</span><br><span class="line">./config shared zlib-dynamic</span><br><span class="line">make &amp; make install</span><br></pre></td></tr></table></figure></p>
@@ -616,7 +619,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -684,9 +687,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

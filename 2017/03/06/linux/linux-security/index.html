@@ -104,10 +104,12 @@
 <meta property="og:site_name" content="San&#39;s blog">
 <meta property="og:description" content="前景买了台aliyun香港节点ecs折腾下, 系统改加固的加固">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-07T14:03:50.000Z">
+<meta property="og:image" content="http://blog.tookbra.com/images/linux/centos-logo.png">
+<meta property="og:updated_time" content="2019-03-21T09:28:55.553Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos加固">
 <meta name="twitter:description" content="前景买了台aliyun香港节点ecs折腾下, 系统改加固的加固">
+<meta name="twitter:image" content="http://blog.tookbra.com/images/linux/centos-logo.png">
 
 
 
@@ -196,7 +198,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -385,9 +387,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2019-01-07 22:03:50" itemprop="dateModified" datetime="2019-01-07T22:03:50+08:00">2019-01-07</time>
+                <time title="更新于：2019-03-21 17:28:55" itemprop="dateModified" datetime="2019-03-21T17:28:55+08:00">2019-03-21</time>
               
             
           </span>
@@ -422,7 +424,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/03/06/linux/linux-security/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/06/linux/linux-security/" itemprop="commentCount"></span>
                 </a>
@@ -452,7 +454,8 @@
       
 
       
-        <h1 id="前景"><a href="#前景" class="headerlink" title="前景"></a>前景</h1><p>买了台aliyun香港节点ecs折腾下, 系统改加固的加固<br><a id="more"></a></p>
+        <p><img src="/images/linux/centos-logo.png" alt="openssh"></p>
+<h1 id="前景"><a href="#前景" class="headerlink" title="前景"></a>前景</h1><p>买了台aliyun香港节点ecs折腾下, 系统改加固的加固<br><a id="more"></a></p>
 <h2 id="linux加固"><a href="#linux加固" class="headerlink" title="linux加固"></a>linux加固</h2><p>1.更新系统<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y update</span><br></pre></td></tr></table></figure></p>
 <p>2.查看是否有人暴力破解<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /var/log/secure|awk '/Failed/&#123;print $(NF-3)&#125;'|sort|uniq -c|awk '&#123;print $2"="$1;&#125;'</span><br></pre></td></tr></table></figure></p>
 <p>3.更改SSH端口，最好改为10000以上<br>修改 port对应的ssh端口号<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ssh/ssh_config</span><br><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure></p>
@@ -460,7 +463,7 @@
 <p>4.开放防火墙ssh端口<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iptables -A INPUT -p tcp --dport 123456 -j ACCEPT</span><br><span class="line">service iptables save</span><br></pre></td></tr></table></figure></p>
 <p>查看iptable 规则<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -L</span><br></pre></td></tr></table></figure></p>
 <p>5.删除不需要的账号和组，这里不要直接删除,把不需要的组和用户注释掉即可<br>adm、lp、shutdown、uucp、operator、games、gopher、video等</p>
-<p>6.增加普通账号，并禁止root远程登录<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">useradd newuser  //添加新用户</span><br><span class="line">passwd newuser  //修改密码</span><br><span class="line">usermod -G10 newuser //将用户加入wheel组，允许使用 su – 命令提权成root</span><br><span class="line"></span><br><span class="line">vi /etc/pam.d/su</span><br><span class="line"><span class="meta">#</span><span class="bash">auth            required        pam_wheel.so use_uid 把这段话注释去掉</span></span><br><span class="line">echo “SU_WHEEL_ONLY yes” &gt;&gt; /etc/login.defs  //禁止不在wheel组的用户使用su -命令</span><br></pre></td></tr></table></figure></p>
+<p>6.增加普通账号，并禁止root远程登录<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">useradd newuser  //添加新用户</span><br><span class="line">passwd newuser  //修改密码</span><br><span class="line">usermod -G10 newuser //将用户加入wheel组，允许使用 su – 命令提权成root</span><br><span class="line"></span><br><span class="line">vi /etc/pam.d/su</span><br><span class="line"><span class="meta">#</span>auth            required        pam_wheel.so use_uid 把这段话注释去掉</span><br><span class="line">echo “SU_WHEEL_ONLY yes” &gt;&gt; /etc/login.defs  //禁止不在wheel组的用户使用su -命令</span><br></pre></td></tr></table></figure></p>
 <p>7.禁止root登陆<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br><span class="line">PermitRootLogin no  //禁止root远程登录</span><br><span class="line">PermitEmptyPasswords no //禁止空密码登录</span><br></pre></td></tr></table></figure></p>
 <p>8.设备系统口令策略<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/login.defs</span><br><span class="line">PASS_MAX_DAYS   90   //密码过期时间</span><br><span class="line">PASS_MIN_LEN    12   //密码最小长度</span><br></pre></td></tr></table></figure></p>
 <p>9.修改帐户TMOUT值，设置自动注销时间<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br><span class="line">HISTSIZE=10  //base历史保留条数</span><br><span class="line">TMOUT=600    //自动注销时间</span><br></pre></td></tr></table></figure></p>
@@ -542,7 +545,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/20/spring-source-1/" rel="prev" title="spring-source-1">
+              <a href="/2017/04/20/spring/spring-source-1/" rel="prev" title="spring-source-1">
                 spring-source-1 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -624,7 +627,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -692,9 +695,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

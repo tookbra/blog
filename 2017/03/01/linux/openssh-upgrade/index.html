@@ -104,12 +104,13 @@
 <meta property="og:site_name" content="San&#39;s blog">
 <meta property="og:description" content="前景买了台aliyun香港节点ecs折腾下, 系统改加固的加固">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://o6puk5olb.bkt.clouddn.com/openssh-error.png">
-<meta property="og:updated_time" content="2019-01-07T14:03:50.000Z">
+<meta property="og:image" content="http://blog.tookbra.com/images/linux/openssh.png">
+<meta property="og:image" content="http://blog.tookbra.com/images/linux/openssh-error.png">
+<meta property="og:updated_time" content="2019-03-21T08:43:23.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="openssh upgrade">
 <meta name="twitter:description" content="前景买了台aliyun香港节点ecs折腾下, 系统改加固的加固">
-<meta name="twitter:image" content="http://o6puk5olb.bkt.clouddn.com/openssh-error.png">
+<meta name="twitter:image" content="http://blog.tookbra.com/images/linux/openssh.png">
 
 
 
@@ -198,7 +199,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -387,9 +388,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2019-01-07 22:03:50" itemprop="dateModified" datetime="2019-01-07T22:03:50+08:00">2019-01-07</time>
+                <time title="更新于：2019-03-21 16:43:23" itemprop="dateModified" datetime="2019-03-21T16:43:23+08:00">2019-03-21</time>
               
             
           </span>
@@ -424,7 +425,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/03/01/linux/openssh-upgrade/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/01/linux/openssh-upgrade/" itemprop="commentCount"></span>
                 </a>
@@ -454,12 +455,13 @@
       
 
       
-        <h1 id="前景"><a href="#前景" class="headerlink" title="前景"></a>前景</h1><p>买了台aliyun香港节点ecs折腾下, 系统改加固的加固<br><a id="more"></a></p>
+        <p><img src="/images/linux/openssh.png" alt="openssh"></p>
+<h1 id="前景"><a href="#前景" class="headerlink" title="前景"></a>前景</h1><p>买了台aliyun香港节点ecs折腾下, 系统改加固的加固<br><a id="more"></a></p>
 <h2 id="升级openssh"><a href="#升级openssh" class="headerlink" title="升级openssh"></a>升级openssh</h2><p>1.备份系统自带openssh文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -rf /etc/ssh /etc/ssh.bak</span><br></pre></td></tr></table></figure></p>
 <p>2.安装openssh所需依赖<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc openssl-devel pam-devel rpm-build</span><br></pre></td></tr></table></figure></p>
 <p>3.下载openssh文件，检测运行环境编译并安装</p>
 <p><strong>这里我去掉了pam模块</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget http://mirror.internode.on.net/pub/OpenBSD/OpenSSH/portable/openssh-7.4p1.tar.gz</span><br><span class="line">tar zxvf openssh-7.4p1.tar.gz</span><br><span class="line"> ./configure --prefix=/usr --sysconfdir=/etc/ssh --with-zlib --with-md5-passwords --enable-shared</span><br><span class="line">make &amp; make install</span><br><span class="line">service sshd restart</span><br></pre></td></tr></table></figure></p>
-<p>4.解决警告<br><img src="http://o6puk5olb.bkt.clouddn.com/openssh-error.png" alt="openssh-warn"><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sed -i '/^GSSAPICleanupCredentials/s/GSSAPICleanupCredentials yes/#GSSAPICleanupCredentials yes/' /etc/ssh/sshd_config</span><br><span class="line">sed -i '/^GSSAPIAuthentication/s/GSSAPIAuthentication yes/#GSSAPIAuthentication yes/' /etc/ssh/sshd_config</span><br><span class="line">sed -i '/^GSSAPIAuthentication/s/GSSAPIAuthentication no/#GSSAPIAuthentication no/' /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure></p>
+<p>4.解决警告<br><img src="/images/linux/openssh-error.png" alt="openssh-warn"><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sed -i '/^GSSAPICleanupCredentials/s/GSSAPICleanupCredentials yes/#GSSAPICleanupCredentials yes/' /etc/ssh/sshd_config</span><br><span class="line">sed -i '/^GSSAPIAuthentication/s/GSSAPIAuthentication yes/#GSSAPIAuthentication yes/' /etc/ssh/sshd_config</span><br><span class="line">sed -i '/^GSSAPIAuthentication/s/GSSAPIAuthentication no/#GSSAPIAuthentication no/' /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure></p>
 <p>或者 在configure加入 –with-kerberos5=/usr/lib64/libkrb5.so</p>
 <p>5.开机运行<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig sshd on</span><br></pre></td></tr></table></figure></p>
 <p>6.问题<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">configure: error: PAM headers not found</span><br><span class="line">需要安装pam-devel的rpm包</span><br><span class="line">yum install  –y  pam-devel</span><br></pre></td></tr></table></figure></p>
@@ -619,7 +621,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -687,9 +689,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

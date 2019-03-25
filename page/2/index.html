@@ -195,7 +195,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -326,6 +326,410 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="San's blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/" class="post-title-link" itemprop="url">Spring Cloud Eureka (八) 服务下线</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建于：2017-08-30 16:33:53" itemprop="dateCreated datePublished" datetime="2017-08-30T16:33:53+08:00">2017-08-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2019-03-21 17:19:48" itemprop="dateModified" datetime="2019-03-21T17:19:48+08:00">2019-03-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/eureka/" itemprop="url" rel="index"><span itemprop="name">eureka</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments：</span>
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<ul>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-一/">Spring Cloud Eureka(一) 前身今世</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Server/">Spring Cloud Eureka(三) 注册中心</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/">Spring Cloud Eureka(四) 注册中心源码</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/">Spring Cloud Eureka(五) 客户端源码</a></li>
+<li><a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/">Spring Cloud Eureka(六) 服务注册</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">Spring Cloud Eureka(七) 服务续约</a></li>
+<li>Spring Cloud Eureka(八) 服务下线</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Cancel/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="博主"/>
+      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
+      <meta itemprop="image" content="/images/logo.png"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="San's blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/" class="post-title-link" itemprop="url">Spring Cloud Eureka (七) 服务续约</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建于：2017-08-30 14:30:47" itemprop="dateCreated datePublished" datetime="2017-08-30T14:30:47+08:00">2017-08-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="更新于：2019-03-21 17:25:56" itemprop="dateModified" datetime="2019-03-21T17:25:56+08:00">2019-03-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/eureka/" itemprop="url" rel="index"><span itemprop="name">eureka</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments：</span>
+                <a href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<ul>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-一/">Spring Cloud Eureka(一) 前身今世</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Server/">Spring Cloud Eureka(三) 注册中心</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/">Spring Cloud Eureka(四) 注册中心源码</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/">Spring Cloud Eureka(五) 客户端源码</a></li>
+<li><a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/">Spring Cloud Eureka(六) 服务注册</a></li>
+<li>Spring Cloud Eureka(七) 服务续约</li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">Spring Cloud Eureka(八) 服务下线</a></li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/08/30/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Heartbeat/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -386,9 +790,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+                <time title="更新于：2019-03-21 17:25:56" itemprop="dateModified" datetime="2019-03-21T17:25:56+08:00">2019-03-21</time>
               
             
           </span>
@@ -423,7 +827,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/29/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Register/" itemprop="commentCount"></span>
                 </a>
@@ -454,17 +858,17 @@
 
       
         
-          
-            <p>
-              
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud Eureka(五) 客户端源码
-Spring
-              ...
-            </p>
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<ul>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-一/">Spring Cloud Eureka(一) 前身今世</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Server/">Spring Cloud Eureka(三) 注册中心</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/">Spring Cloud Eureka(四) 注册中心源码</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/">Spring Cloud Eureka(五) 客户端源码</a></li>
+<li>Spring Cloud Eureka(六) 服务注册</li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">Spring Cloud Eureka(七) 服务续约</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">Spring Cloud Eureka(八) 服务下线</a></li>
+</ul>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -588,9 +992,9 @@ Spring
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+                <time title="更新于：2019-03-21 17:25:56" itemprop="dateModified" datetime="2019-03-21T17:25:56+08:00">2019-03-21</time>
               
             
           </span>
@@ -625,7 +1029,7 @@ Spring
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/08/25/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Source/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/25/spring-cloud/eureka/Spring-Cloud-Eureka-Client-Source/" itemprop="commentCount"></span>
                 </a>
@@ -656,17 +1060,20 @@ Spring
 
       
         
-          
-            <p>
-              
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud Eureka(五) 客户端源码
-Spring
-              ...
-            </p>
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<ul>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-一/">Spring Cloud Eureka(一) 前身今世</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Server/">Spring Cloud Eureka(三) 注册中心</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/">Spring Cloud Eureka(四) 注册中心源码</a></li>
+<li>Spring Cloud Eureka(五) 客户端源码</li>
+<li><a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/">Spring Cloud Eureka(六) 服务注册</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">Spring Cloud Eureka(七) 服务续约</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">Spring Cloud Eureka(八) 服务下线</a></li>
+</ul>
+<blockquote>
+<p>本次spring-cloud-starter-eureka源码的版本为1.3.0</p>
+</blockquote>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -790,9 +1197,9 @@ Spring
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+                <time title="更新于：2019-03-21 17:25:56" itemprop="dateModified" datetime="2019-03-21T17:25:56+08:00">2019-03-21</time>
               
             
           </span>
@@ -827,7 +1234,7 @@ Spring
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/08/25/spring-cloud/eureka/Spring-Cloud-Eureka-Server-Source/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/25/spring-cloud/eureka/Spring-Cloud-Eureka-Server-Source/" itemprop="commentCount"></span>
                 </a>
@@ -858,17 +1265,21 @@ Spring
 
       
         
-          
-            <p>
-              [Spring Cloud Eureka]
-
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud 
-              ...
-            </p>
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<p>[Spring Cloud Eureka]</p>
+<ul>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-一/">Spring Cloud Eureka(一) 前身今世</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Server/">Spring Cloud Eureka(三) 注册中心</a></li>
+<li>Spring Cloud Eureka(四) 注册中心源码</li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/">Spring Cloud Eureka(五) 客户端源码</a></li>
+<li><a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/">Spring Cloud Eureka(六) 服务注册</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">Spring Cloud Eureka(七) 服务续约</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">Spring Cloud Eureka(八) 服务下线</a></li>
+</ul>
+<blockquote>
+<p>本次spring-cloud-starter-eureka-server源码的版本为1.3.0</p>
+</blockquote>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -992,9 +1403,9 @@ Spring Cloud
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+                <time title="更新于：2019-03-21 17:25:56" itemprop="dateModified" datetime="2019-03-21T17:25:56+08:00">2019-03-21</time>
               
             
           </span>
@@ -1029,7 +1440,7 @@ Spring Cloud
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-Server/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-Server/" itemprop="commentCount"></span>
                 </a>
@@ -1060,17 +1471,18 @@ Spring Cloud
 
       
         
-          
-            <p>
-              [Spring Cloud Eureka]
-
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud 
-              ...
-            </p>
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<p>[Spring Cloud Eureka]</p>
+<ul>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-一/">Spring Cloud Eureka(一) 前身今世</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
+<li>Spring Cloud Eureka(三) 注册中心</li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/">Spring Cloud Eureka(四) 注册中心源码</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/">Spring Cloud Eureka(五) 客户端源码</a></li>
+<li><a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/">Spring Cloud Eureka(六) 服务注册</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">Spring Cloud Eureka(七) 服务续约</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">Spring Cloud Eureka(八) 服务下线</a></li>
+</ul>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1194,9 +1606,9 @@ Spring Cloud
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+                <time title="更新于：2019-03-21 17:25:55" itemprop="dateModified" datetime="2019-03-21T17:25:55+08:00">2019-03-21</time>
               
             
           </span>
@@ -1231,7 +1643,7 @@ Spring Cloud
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-Properties/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-Properties/" itemprop="commentCount"></span>
                 </a>
@@ -1262,17 +1674,18 @@ Spring Cloud
 
       
         
-          
-            <p>
-              [Spring Cloud Eureka]
-
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud 
-              ...
-            </p>
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<p>[Spring Cloud Eureka]</p>
+<ul>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-一/">Spring Cloud Eureka(一) 前身今世</a></li>
+<li>Spring Cloud Eureka(二) 配置文件</li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Server/">Spring Cloud Eureka(三) 注册中心</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/">Spring Cloud Eureka(四) 注册中心源码</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/">Spring Cloud Eureka(五) 客户端源码</a></li>
+<li><a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/">Spring Cloud Eureka(六) 服务注册</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">Spring Cloud Eureka(七) 服务续约</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">Spring Cloud Eureka(八) 服务下线</a></li>
+</ul>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1396,9 +1809,9 @@ Spring Cloud
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="更新于：2017-12-03 17:16:35" itemprop="dateModified" datetime="2017-12-03T17:16:35+08:00">2017-12-03</time>
+                <time title="更新于：2019-03-21 17:25:56" itemprop="dateModified" datetime="2019-03-21T17:25:56+08:00">2019-03-21</time>
               
             
           </span>
@@ -1433,7 +1846,7 @@ Spring Cloud
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-一/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/24/spring-cloud/eureka/Spring-Cloud-Eureka-一/" itemprop="commentCount"></span>
                 </a>
@@ -1464,17 +1877,22 @@ Spring Cloud
 
       
         
-          
-            <p>
-              [Spring Cloud Eureka]
-
-Spring Cloud Eureka(一) 前身今世
-Spring Cloud Eureka(二) 配置文件
-Spring Cloud Eureka(三) 注册中心
-Spring Cloud Eureka(四) 注册中心源码
-Spring Cloud 
-              ...
-            </p>
+          <p><img src="/images/spring-cloud/2017-08-25-eureka-logo-2627.png" alt="eureka-logo"></p>
+<p>[Spring Cloud Eureka]</p>
+<ul>
+<li>Spring Cloud Eureka(一) 前身今世</li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Properties/">Spring Cloud Eureka(二) 配置文件</a></li>
+<li><a href="/2017/08/24/Spring-Cloud-Eureka-Server/">Spring Cloud Eureka(三) 注册中心</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Server-Source/">Spring Cloud Eureka(四) 注册中心源码</a></li>
+<li><a href="/2017/08/25/Spring-Cloud-Eureka-Client-Source/">Spring Cloud Eureka(五) 客户端源码</a></li>
+<li><a href="/2017/08/29/Spring-Cloud-Eureka-Client-Register/">Spring Cloud Eureka(六) 服务注册</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Heartbeat/">Spring Cloud Eureka(七) 服务续约</a></li>
+<li><a href="/2017/08/30/Spring-Cloud-Eureka-Client-Cancel/">Spring Cloud Eureka(八) 服务下线</a></li>
+</ul>
+<h2 id="什么是Eureka"><a href="#什么是Eureka" class="headerlink" title="什么是Eureka"></a>什么是Eureka</h2><blockquote>
+<p>Eureka(尢里卡)是Netflix公司开源的基于REST（Representational State Transfer）的服务<br>主要用于AWS云中，用于定位服务，以实现中间层服务器的负载平衡和故障转移。我们称这个服务，尤里卡服务器。<br>尤里卡还提供了一个基于Java的客户端组件Eureka Client，它与服务的交互更容易。<br>客户端还具有内置负载平衡器，可进行基本的循环负载平衡。<br>在Netflix，一个更复杂的负载均衡器将Eureka包装，以提供基于诸如流量，资源使用，错误条件等多个因素的加权负载平衡，以提供卓越的弹性。</p>
+</blockquote>
+<p>Spring Cloud把Netflix公司开源的Eureka整合到了Spring Cloud Netflix项目中，抽象出接口，方便使用。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1538,7 +1956,7 @@ Spring Cloud
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/23/elasticsearch-install/"/>
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/23/storage/elasticsearch-install/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="博主"/>
@@ -1558,7 +1976,7 @@ Spring Cloud
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2017/08/23/elasticsearch-install/" class="post-title-link" itemprop="url">elasticsearch安装</a>
+                <a href="/2017/08/23/storage/elasticsearch-install/" class="post-title-link" itemprop="url">elasticsearch安装</a>
               
             
           </h2>
@@ -1598,7 +2016,7 @@ Spring Cloud
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
                 <time title="更新于：2017-08-31 11:30:11" itemprop="dateModified" datetime="2017-08-31T11:30:11+08:00">2017-08-31</time>
               
@@ -1635,9 +2053,9 @@ Spring Cloud
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
-                <a href="/2017/08/23/elasticsearch-install/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/23/elasticsearch-install/" itemprop="commentCount"></span>
+                <span class="post-meta-item-text">Comments：</span>
+                <a href="/2017/08/23/storage/elasticsearch-install/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/23/storage/elasticsearch-install/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1674,7 +2092,7 @@ Spring Cloud
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/08/23/elasticsearch-install/#more" rel="contents">
+              <a class="btn" href="/2017/08/23/storage/elasticsearch-install/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1734,7 +2152,7 @@ Spring Cloud
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/11/mysql-install/"/>
+    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/11/storage/mysql-install/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="博主"/>
@@ -1754,7 +2172,7 @@ Spring Cloud
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2017/08/11/mysql-install/" class="post-title-link" itemprop="url">Mysql 压缩包安装</a>
+                <a href="/2017/08/11/storage/mysql-install/" class="post-title-link" itemprop="url">Mysql 压缩包安装</a>
               
             
           </h2>
@@ -1794,7 +2212,7 @@ Spring Cloud
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">Edited on</span>
                 
                 <time title="更新于：2017-08-31 11:30:46" itemprop="dateModified" datetime="2017-08-31T11:30:46+08:00">2017-08-31</time>
               
@@ -1831,9 +2249,9 @@ Spring Cloud
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
-                <a href="/2017/08/11/mysql-install/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/11/mysql-install/" itemprop="commentCount"></span>
+                <span class="post-meta-item-text">Comments：</span>
+                <a href="/2017/08/11/storage/mysql-install/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/11/storage/mysql-install/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1872,381 +2290,7 @@ Spring Cloud
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/08/11/mysql-install/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/08/08/ectd/"/>
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="博主"/>
-      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
-      <meta itemprop="image" content="/images/logo.png"/>
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog"/>
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/08/08/ectd/" class="post-title-link" itemprop="url">ectd</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建于：2017-08-08 23:05:58" itemprop="dateCreated datePublished" datetime="2017-08-08T23:05:58+08:00">2017-08-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Bearbeitet am</span>
-                
-                <time title="更新于：2017-08-14 11:23:23" itemprop="dateModified" datetime="2017-08-14T11:23:23+08:00">2017-08-14</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Kommentare：</span>
-                <a href="/2017/08/08/ectd/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/08/08/ectd/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              
-              
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2017/08/08/ectd/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tookbra.com/2017/07/14/java-concurrent-AtomicBoolean/"/>
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="博主"/>
-      <meta itemprop="description" content="tookbra's blog, the one like liao mei"/>
-      <meta itemprop="image" content="/images/logo.png"/>
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="San's blog"/>
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/07/14/java-concurrent-AtomicBoolean/" class="post-title-link" itemprop="url">Java并发包揭秘之AtomicBoolean</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建于：2017-07-14 00:16:25" itemprop="dateCreated datePublished" datetime="2017-07-14T00:16:25+08:00">2017-07-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Bearbeitet am</span>
-                
-                <time title="更新于：2017-07-17 16:41:35" itemprop="dateModified" datetime="2017-07-17T16:41:35+08:00">2017-07-17</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Kommentare：</span>
-                <a href="/2017/07/14/java-concurrent-AtomicBoolean/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/07/14/java-concurrent-AtomicBoolean/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              private static final Unsafe unsafe = Unsafe.getUnsafe();private static final long valueOffset;static &#123;    try &#123;        valueOffset = unsafe.
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2017/07/14/java-concurrent-AtomicBoolean/#more" rel="contents">
+              <a class="btn" href="/2017/08/11/storage/mysql-install/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2295,7 +2339,7 @@ Spring Cloud
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Vorherige Seite"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Nächste Seite"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -2341,7 +2385,7 @@ Spring Cloud
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2409,9 +2453,7 @@ Spring Cloud
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
